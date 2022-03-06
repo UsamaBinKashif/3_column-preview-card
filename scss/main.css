@@ -1,0 +1,115 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  row-gap: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.container .box-orange {
+  background-color: #e38826;
+}
+.container .box-orange button {
+  color: #e38826;
+  margin-top: 5px;
+}
+.container .box-orange button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  margin-top: 38px;
+}
+.container .box-cyan {
+  background-color: #006970;
+}
+.container .box-cyan button {
+  color: #006970;
+  margin-top: 60px !important;
+}
+.container .box-cyan button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  margin-top: 58px !important;
+}
+.container .box-darkCyan {
+  background-color: #004241;
+}
+.container .box-darkCyan button {
+  color: #004241;
+}
+.container .box-darkCyan button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  margin-top: 38px;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+  color: #f2f2f2;
+  max-width: 250px;
+  max-height: 430px;
+  padding: 6rem 2rem;
+}
+.container .box h3 {
+  text-transform: uppercase;
+}
+.container .box p {
+  text-transform: lowercase;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.75);
+}
+.container .box button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+  width: 130px;
+  padding: 0.6rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: #e38826;
+}
+
+@media (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+  }
+  .container .box {
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.7rem 2rem;
+    gap: 20px;
+    height: 350px;
+  }
+}/*# sourceMappingURL=main.css.map */

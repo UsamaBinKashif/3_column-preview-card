@@ -1,0 +1,128 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  row-gap: 20px;
+}
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+$Light-gray: hsl(0, 0%, 95%);
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  .box-orange {
+    background-color: $Bright-orange;
+    button {
+      color: $Bright-orange;
+      margin-top: 5px;
+      
+    }
+    button:hover {
+      background-color: $Bright-orange;
+      color: $Light-gray;
+      border: 1px solid $Light-gray;
+      margin-top: 38px
+      
+    }
+  }
+  .box-cyan {
+    background-color: $Dark-cyan;
+
+    button {
+      color: $Dark-cyan;
+      margin-top: 60px !important;
+    }
+    button:hover {
+      background-color: $Dark-cyan;
+      color: $Light-gray;
+      border: 1px solid $Light-gray;
+      margin-top: 58px !important;
+    }
+  }
+  .box-darkCyan {
+    background-color: $Very-dark-cyan;
+    button {
+      color: $Very-dark-cyan;
+    }
+    button:hover {
+      background-color: $Very-dark-cyan;
+      color: $Light-gray;
+      border: 1px solid $Light-gray;
+      margin-top: 38px;
+    }
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 10px;
+    color: $Light-gray;
+    max-width: 250px;
+    max-height: 430px;
+    padding: 6rem 2rem;
+
+    h3 {
+      text-transform: uppercase;
+    }
+    p {
+      text-transform: lowercase;
+      font-weight: 100;
+      color: $Transparent-white;
+    }
+    button {
+      font-family: "Lexend Deca", sans-serif;
+      font-weight: 600;
+      width: 130px;
+      padding: 0.6rem;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  a {
+    color: $Bright-orange;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+
+    .box {
+      justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      padding: 0.7rem 2rem;
+      gap: 20px;
+      height: 350px;
+    }
+  }
+}
